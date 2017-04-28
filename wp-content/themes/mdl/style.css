@@ -1,0 +1,13 @@
+/*
+Theme Name: MDL
+Author: OLX
+Description: MDL
+Version: 0.0.1
+Tags: MDL
+*/
+li.page_item {
+	display: inline;
+}
+li.page_item_block {
+	display: block;
+}
