@@ -11,3 +11,11 @@ li.page_item {
 li.page_item_block {
 	display: block;
 }
+ul.menu.mdl-navigation__link li.menu-item.mdl-navigation__link {
+	display: inline;
+}
+ul.menu.mdl-navigation__link li.menu-item.mdl-navigation__link a {
+	text-decoration: none;
+	color: white;
+	opacity: .87;
+}
