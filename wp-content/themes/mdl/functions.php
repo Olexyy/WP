@@ -61,3 +61,14 @@ function custom_header_widget_init() {
 }
 
 add_action('widgets_init', 'custom_header_widget_init');
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+

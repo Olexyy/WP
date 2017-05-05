@@ -10,7 +10,8 @@
 		</ol>
 	</div>
 	<div class="sidebar-module">
-		<h4>Elsewhere</h4>
+        <?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
+		<h4>Links</h4>
 		<ol class="list-unstyled block">
             <li class="page_item_block"><a href="<?php echo get_option('github'); ?>">GitHub</a></li>
             <li class="page_item_block"><a href="<?php echo get_option('twitter'); ?>">Twitter</a></li>

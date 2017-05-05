@@ -48,6 +48,7 @@
 						<nav class="mdl-navigation">
 							<!--a class="mdl-navigation__link active" href="/">Home</a-->
 							<?php wp_list_pages( '&title_li=' ); ?>
+                            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 							<a class="mdl-navigation__link" href="/">Hardcoded</a>
 						</nav>
 					</div>
@@ -55,9 +56,8 @@
 				<div class="mdl-layout__drawer">
 					<span class="mdl-layout-title">Home</span>
 					<nav class="mdl-navigation">
-						<a class="mdl-navigation__link" href="">Link</a>
-						<a class="mdl-navigation__link" href="">Link</a>
-						<a class="mdl-navigation__link" href="">Link</a>
-						<a class="mdl-navigation__link" href="">Link</a>
+                        <?php wp_list_pages( '&title_li=' ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        <a class="mdl-navigation__link" href="/">Hardcoded</a>
 					</nav>
 				</div>
